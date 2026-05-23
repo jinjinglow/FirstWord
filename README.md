@@ -1,3 +1,9 @@
+# Her Code Her Cause Hackathon (Problem 1)
+
+Problem Statement: Teachers, healthcare workers, volunteers, and other frontline professionals may encounter signs of family violence but often lack quick access to practical guidance on how to respond appropriately. Existing resources are fragmented and not easily accessible at the moment help is needed. 
+
+Challenge: How might technology provide just-in-time guidance and decision support for non-specialist professionals who may encounter potential family violence situations, while preserving confidentiality and professional judgement?
+
 # FirstWord
 
 Offline-first desktop/web hybrid application for Singapore child safety case intake documentation and recommendation support.
@@ -97,7 +103,7 @@ Stored fields include case IDs, timestamps, structured summaries, recommendation
 
 ## Approved Guidance Snapshot
 
-The recommendation engine uses a bundled local snapshot derived from Singapore MSF Break The Silence pages for:
+The recommendation engine uses a bundled local snapshot derived from Singapore MSF Break The Silence pages at *https://www.msf.gov.sg/what-we-do/break-the-silence/home* for:
 
 - SSSG and CARG roles
 - Tier 1 and Tier 2 protection principles
