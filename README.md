@@ -10,6 +10,14 @@ Offline-first desktop/web hybrid application for Singapore child safety case int
 
 The application records discussion audio, transcribes it locally with Faster-Whisper, summarises it locally through Ollama/Qwen2.5, compares the summary against a bundled MSF Break The Silence guidance snapshot, and stores only summaries and recommendations in SQLite.
 
+### Home Screen
+
+<img src="screenshots/HomePage.png" width="700"/>
+
+### Case Management Screen
+
+<img src="screenshots/CaseSample.png" width="700"/>
+
 ## Safety Boundaries
 
 - The app does not diagnose child abuse.
