@@ -6,9 +6,13 @@ Challenge: How might technology provide just-in-time guidance and decision suppo
 
 # FirstWord
 
-Offline-first desktop/web hybrid application for Singapore child safety case intake documentation and recommendation support.
+FirstWord is designed to support frontline professionals in documenting observations, assessing potential concerns, and making informed decisions on whether a suspected case of child abuse should be escalated.
 
-The application records discussion audio, transcribes it locally with Faster-Whisper, summarises it locally through Ollama/Qwen2.5, compares the summary against a bundled MSF Break The Silence guidance snapshot, and stores only summaries and recommendations in SQLite.
+FirstWord enables frontline professionals to record their observations through voice input, speeding up the documentation process. Audio recordings are transcribed, summarised, and consolidated with any previous case notes. The consolidated information is then assessed against the Break the Silence guidelines published by the Ministry of Social and Family Development (MSF) (Source: *https://www.msf.gov.sg/what-we-do/break-the-silence/home*).
+
+Afterwhich, FirstWord would generate recommendations on the next appropriate steps, helping frontline professionals make an objective decision. 
+
+By operating offline and storing only case IDs of each child, the solution ensures that information remains confidential. The application would also be accessible in environments with limited internet connectivity.
 
 ### Home Screen
 
@@ -20,11 +24,10 @@ The application records discussion audio, transcribes it locally with Faster-Whi
 
 ## Safety Boundaries
 
-- The app does not diagnose child abuse.
-- It does not confirm abuse, generate criminal accusations, or override professional judgment.
-- Raw audio is temporary and deleted after processing.
+- The app would only provide recommendations, it does not confirm abuse, generate criminal accusations, or override professional judgment.
 - Raw transcripts are held in memory only and are not stored.
 - Recommendations are advisory and always display: "This is a recommendation support tool and does not replace professional judgment."
+- The frontline professionals have the final say on whether the case should be escalated the case.
 
 ## Prerequisites
 
@@ -35,7 +38,7 @@ The application records discussion audio, transcribes it locally with Faster-Whi
 - Qwen2.5 model pulled locally, for example `ollama pull qwen2.5:7b-instruct`
 - Faster-Whisper model available locally or downloadable during setup
 
-Runtime operation is offline-first. Do dependency/model installation before use in an online setup environment if needed.
+Runtime operation is offline. However, an online setup environment is required for dependency/model installations before use.
 
 ## Setup
 
@@ -101,21 +104,16 @@ In `ollama ps`, the `PROCESSOR` column should show `100% GPU` or a CPU/GPU split
 
 ## Data Storage
 
-SQLite tables:
-
-- `cases`
-- `case_updates`
-- `recommendations`
-
-Stored fields include case IDs, timestamps, structured summaries, recommendation labels, rationales, contributing indicators, uncertainty notes, and user mode. Raw recordings and transcripts are never persisted.
+The cases are stored in SQLite tables with information which includes case IDs, timestamps, structured summaries, recommendation labels, rationales, contributing indicators, uncertainty notes, and user mode. Raw recordings and transcripts are never persisted.
 
 ## Approved Guidance Snapshot
 
-The recommendation engine uses a bundled local snapshot derived from Singapore MSF Break The Silence pages at *https://www.msf.gov.sg/what-we-do/break-the-silence/home* for:
+The recommendation engine uses a local snapshot derived from Singapore MSF Break The Silence website (*as of 23 May 2026*) for:
 
 - SSSG and CARG roles
 - Tier 1 and Tier 2 protection principles
-- child protection system concepts
-- signs of physical, sexual, emotional/psychological abuse and neglect
+- Signs of physical, sexual, emotional/psychological abuse and neglect
 
-Refresh this snapshot only through a reviewed update process.
+## Project Presentation
+
+[Download the PowerPoint](PresentationSlides/WOMEN DEV HACKATHON.pdf)
