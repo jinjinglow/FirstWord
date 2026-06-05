@@ -6,13 +6,15 @@ Challenge: How might technology provide just-in-time guidance and decision suppo
 
 # FirstWord
 
-FirstWord is designed to support frontline professionals in documenting observations, assessing potential concerns, and making informed decisions on whether a suspected case of child abuse should be escalated.
+FirstWord was developed using OpenAI Codex. Portions of the codebase, documentation, and application design were generated with AI assistance and subsequently reviewed and adapted by the project team.
 
-FirstWord enables frontline professionals to record their observations through voice input, speeding up the documentation process. Audio recordings are transcribed, summarised, and consolidated with any previous case notes. The consolidated information is then assessed against the Break the Silence guidelines published by the Ministry of Social and Family Development (MSF) (Source: *https://www.msf.gov.sg/what-we-do/break-the-silence/home*).
+FirstWord was designed to support frontline professionals in documenting observations, assessing potential concerns, and making informed decisions on whether a suspected case of child abuse should be escalated.
+
+FirstWord would enable frontline professionals to record their observations through voice input, speeding up the documentation process. Audio recordings were transcribed, summarised, and consolidated with any previous case notes. The consolidated information iwould then be assessed against the Break the Silence guidelines published by the Ministry of Social and Family Development (MSF) (Source: *https://www.msf.gov.sg/what-we-do/break-the-silence/home*).
 
 Afterwhich, FirstWord would generate recommendations on the next appropriate steps, helping frontline professionals make an objective decision. 
 
-By operating offline and storing only case IDs of each child, the solution ensures that information remains confidential. The application would also be accessible in environments with limited internet connectivity.
+By operating offline and storing only case IDs of each child, the solution ensured that information remains confidential. The application would also be accessible in environments with limited internet connectivity.
 
 ### Home Screen
 
@@ -38,7 +40,7 @@ By operating offline and storing only case IDs of each child, the solution ensur
 - Qwen2.5 model pulled locally, for example `ollama pull qwen2.5:7b-instruct`
 - Faster-Whisper model available locally or downloadable during setup
 
-Runtime operation is offline. However, an online setup environment is required for dependency/model installations before use.
+FirstWord is an offline application. However, an online setup environment would be required for dependency/model installations before use.
 
 ## Setup
 
@@ -116,4 +118,4 @@ The recommendation engine uses a local snapshot derived from Singapore MSF Break
 
 ## Project Presentation
 
-[Download the PowerPoint](PresentationSlides/WOMEN DEV HACKATHON.pdf)
+The presentation slides can be found in PresentationSlides/WOMEN DEV HACKATHON.pdf.
