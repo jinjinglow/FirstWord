@@ -10,7 +10,7 @@ FirstWord was developed using OpenAI Codex. Portions of the codebase, documentat
 
 FirstWord was designed to support frontline professionals in documenting observations, assessing potential concerns, and making informed decisions on whether a suspected case of child abuse should be escalated.
 
-FirstWord would enable frontline professionals to record their observations through voice input, speeding up the documentation process. Audio recordings were transcribed, summarised, and consolidated with any previous case notes. The consolidated information iwould then be assessed against the Break the Silence guidelines published by the Ministry of Social and Family Development (MSF) (Source: *https://www.msf.gov.sg/what-we-do/break-the-silence/home*).
+FirstWord would enable frontline professionals to record their observations through voice input, speeding up the documentation process. Audio recordings were transcribed, summarised, and consolidated with any previous case notes. The consolidated information would then be assessed against the Break the Silence guidelines published by the Ministry of Social and Family Development (MSF) (Source: *https://www.msf.gov.sg/what-we-do/break-the-silence/home*).
 
 Afterwhich, FirstWord would generate recommendations on the next appropriate steps, helping frontline professionals make an objective decision. 
 
